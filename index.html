@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予想結果計算ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>予想結果計算ツール</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="name1">Name 1</label>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="name1" placeholder="名前を入力..." autocomplete="off">
+                    <div id="name1-suggestions" class="suggestions"></div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="name2">Name 2</label>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="name2" placeholder="名前を入力..." autocomplete="off">
+                    <div id="name2-suggestions" class="suggestions"></div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="compareValue">比較対象数値</label>
+                <input type="number" id="compareValue" placeholder="数値を入力..." step="0.01">
+            </div>
+
+            <div class="button-group">
+                <button id="calculateBtn" class="calculate-btn">計算する</button>
+                <button id="clearBtn" class="clear-btn">クリア</button>
+            </div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="prediction-value">
+                <span class="label">予想結果:</span>
+                <span id="predictionValue" class="value">-</span>
+            </div>
+            <div class="judgment-result">
+                <span id="judgmentResult">-</span>
+            </div>
+        </div>
+
+        <div id="error" class="error-message hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
