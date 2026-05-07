@@ -63,7 +63,8 @@ const nameData = {
     "Titan": { attr1: 3.0, attr2: 2.5 },
     "Trinity": { attr1: 3.9, attr2: 3.6 },
     "Valeria": { attr1: 4.2, attr2: 3.7 },
-    "Venom": { attr1: 2.0, attr2: 2.8 }
+    "Venom": { attr1: 2.0, attr2: 2.8 },
+    "Zane": { attr1: 2.1, attr2: 3.0 }
 };
 
 // 全てのName一覧
